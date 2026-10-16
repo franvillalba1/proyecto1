@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+.main-marcas{
+    @include grid-eleccion(1fr, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    .aside-marcas{
+        height: 10vh;
+        width: 100%;
+        background-color: $color-publicidad;
+    }
+    .contenedor-marcas{
+        margin: 5px
+    }
+    .card-marcas{
+        @include flex-eleccion(column,center,center);
+        img{
+            display: block;
+            height: 45vh;
+            width: 80%;
+            object-fit: cover;
+            margin: 5px;
+        }
+    }
+}

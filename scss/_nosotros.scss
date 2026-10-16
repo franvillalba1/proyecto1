@@ -1,0 +1,74 @@
+@use "variables" as *;
+
+.main-nosotros{
+    @include grid-eleccion(1fr, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    .aside-nosotros{
+        height: 10vh;
+        width: 100%;
+        background-color: $color-publicidad;
+    }
+    .contenedor-nosotros{
+        justify-items: center;
+        width: 100%;
+        margin: 10px 0px;
+    }
+    img{
+        display: block;
+        height: 30vh;
+        width: 90%;
+        margin: 5px 0px;
+        object-fit: cover;
+        border: 1px solid black;
+        box-sizing: border-box;
+        }
+    .card-nosotros{
+        @include flex-eleccion(column, center, center);
+        height: 40vh;
+        width: 90%;
+        border: 1px solid black;
+        overflow: hidden;
+        background-color: $color-card;
+        color: $color-texto-principal;
+        font-size: smaller;
+        margin: 5px 0px;
+        gap: 5px;
+        box-sizing: border-box;
+    }
+}
+@media (min-width: 768px){
+    .main-nosotros{
+    @include grid-eleccion(10% 80% 10%, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    .aside-nosotros{
+        height: 100%;
+        width: 100%;
+    }
+    }
+.footer-nosotros{
+    @include grid-eleccion(10% 80% 10%, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    aside{
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: $color-publicidad;
+    }
+}
+}
+@media (min-width: 1024px){
+    .main-nosotros{
+        img{
+            height: 40vh;
+        }
+        .contenedor-nosotros{
+            @include grid-eleccion(repeat(2, 1fr), repeat(3, 1fr));
+        }
+    }
+}

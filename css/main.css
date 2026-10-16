@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .NavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header {
+  background-color: rgb(31, 9, 50);
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 5px;
+  align-items: center;
+}
+header .logoBarra {
+  border-radius: 50%;
+  width: 85%;
+  height: 85%;
+  margin: 5px;
+}
+header .NavBar {
+  list-style: none;
+  margin: 10px 30px;
+}
+header .NavBar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+header .NavBar li a {
+  text-decoration: none;
+  color: hsl(74, 75%, 47%);
+  font-style: inherit;
+  font-size: large;
+}
+
+body {
+  background-color: rgb(31, 9, 50);
+}
+
+.titulo-principal {
+  color: chartreuse;
+  text-align: center;
+  margin: 20px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+}
+.main aside {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(71, 249, 255);
+}
+
+.contenedor-producto-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-producto-home .card-producto-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 45vh;
+  width: 80vh;
+  border: 1px solid rgb(231, 224, 224);
+  overflow: hidden;
+  gap: 5px;
+  background-color: rgb(117, 71, 160);
+  margin: 20px;
+}
+.contenedor-producto-home .card-producto-home img {
+  display: block;
+  width: 80%;
+  height: 40%;
+  object-fit: cover;
+}
+.contenedor-producto-home .card-producto-home img:hover {
+  transform: scale(1.25);
+}
+.contenedor-producto-home .card-producto-home h6 {
+  color: chartreuse;
+}
+.contenedor-producto-home .card-producto-home p {
+  color: hsl(74, 75%, 47%);
+}
+
+.titulo-secundario {
+  color: chartreuse;
+  text-align: center;
+  margin: 10px;
+}
+
+.contenedor-nosotros-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+}
+.contenedor-nosotros-home .card-nosotros-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  width: 80vh;
+  border: 1px solid rgb(231, 224, 224);
+  overflow: hidden;
+  gap: 5px;
+  background-color: rgb(117, 71, 160);
+  margin: 20px;
+}
+.contenedor-nosotros-home .card-nosotros-home img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.contenedor-nosotros-home .card-nosotros-home h4 {
+  color: chartreuse;
+}
+.contenedor-nosotros-home .card-nosotros-home p {
+  color: hsl(74, 75%, 47%);
+}
+
+.contenedor-reclamos-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+}
+.contenedor-reclamos-home .card-reclamos-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  width: 80vh;
+  border: 1px solid rgb(231, 224, 224);
+  overflow: hidden;
+  gap: 5px;
+  background-color: rgb(117, 71, 160);
+  margin: 20px;
+}
+.contenedor-reclamos-home .card-reclamos-home .form-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contenedor-reclamos-home .card-reclamos-home .form-contacto label {
+  color: hsl(74, 75%, 47%);
+}
+.contenedor-reclamos-home .card-reclamos-home img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+footer aside {
+  display: none;
+}
+footer p {
+  color: rgb(161, 10, 40);
+  text-align: center;
+  font-size: small;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 1fr;
+  }
+  .main aside {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .main .contenedor-producto-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .contenedor-nosotros-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .contenedor-reclamos-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .main .contenedor-producto-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    flex-wrap: wrap;
+  }
+  .main .contenedor-producto-home .card-producto-home {
+    height: 45vh;
+    width: 37vh;
+  }
+  .main .contenedor-nosotros-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    flex-wrap: wrap;
+  }
+  .main .contenedor-nosotros-home .card-nosotros-home {
+    height: 45vh;
+    width: 37vh;
+  }
+  .main .contenedor-reclamos-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    flex-wrap: wrap;
+  }
+  .main .contenedor-reclamos-home .card-reclamos-home {
+    height: 45vh;
+    width: 37vh;
+  }
+}
+.main-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.main-contacto aside {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(71, 249, 255);
+}
+.main-contacto .form-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 55vh;
+  width: 90vh;
+  border: 1px solid rgb(231, 224, 224);
+  overflow: hidden;
+  gap: 5px;
+  background-color: rgb(117, 71, 160);
+  margin: 20px;
+}
+.main-contacto .form-contacto label {
+  color: hsl(74, 75%, 47%);
+}
+.main-contacto .form-contacto .titulo-secundario {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 1fr;
+  }
+  .main-contacto aside {
+    height: 100%;
+    width: 100%;
+  }
+  .main-contacto .form-contacto {
+    height: 65vh;
+    gap: 3px;
+  }
+}
+.footer-contacto {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 1fr;
+}
+.footer-contacto aside {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(71, 249, 255);
+  display: block;
+}
+
+.main-productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.main-productos .aside-productos {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(71, 249, 255);
+}
+.main-productos .card-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 45vh;
+  width: 80vh;
+  border: 1px solid rgb(231, 224, 224);
+  overflow: hidden;
+  gap: 5px;
+  background-color: rgb(117, 71, 160);
+  margin: 20px;
+}
+.main-productos .card-productos img {
+  display: block;
+  width: 80%;
+  height: 40%;
+  object-fit: cover;
+}
+.main-productos .card-productos img:hover {
+  transform: scale(1.25);
+}
+.main-productos .card-productos h5 {
+  color: chartreuse;
+}
+.main-productos .card-productos p {
+  color: hsl(74, 75%, 47%);
+}
+
+@media (min-width: 768px) {
+  .main-productos {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 1fr;
+  }
+  .main-productos .aside-productos {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .main-productos .card-productos {
+    width: 90vh;
+  }
+}
+.footer-productos {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 1fr;
+  text-align: center;
+  font-size: small;
+  margin: 0;
+}
+.footer-productos p {
+  text-align: center;
+  font-size: small;
+  margin: 0;
+}
+.footer-productos .footer-productos-aside {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(71, 249, 255);
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .main-productos .container-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 0px;
+  }
+  .main-productos .container-productos .card-productos {
+    width: 40vh;
+  }
+}
+.main-nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.main-nosotros .aside-nosotros {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(71, 249, 255);
+}
+.main-nosotros .contenedor-nosotros {
+  justify-items: center;
+  width: 100%;
+  margin: 10px 0px;
+}
+.main-nosotros img {
+  display: block;
+  height: 30vh;
+  width: 90%;
+  margin: 5px 0px;
+  object-fit: cover;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.main-nosotros .card-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 90%;
+  border: 1px solid black;
+  overflow: hidden;
+  background-color: rgb(117, 71, 160);
+  color: hsl(74, 75%, 47%);
+  font-size: smaller;
+  margin: 5px 0px;
+  gap: 5px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .main-nosotros {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .main-nosotros .aside-nosotros {
+    height: 100%;
+    width: 100%;
+  }
+  .footer-nosotros {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .footer-nosotros aside {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(71, 249, 255);
+  }
+}
+@media (min-width: 1024px) {
+  .main-nosotros img {
+    height: 40vh;
+  }
+  .main-nosotros .contenedor-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+.main-marcas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.main-marcas .aside-marcas {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(71, 249, 255);
+}
+.main-marcas .contenedor-marcas {
+  margin: 5px;
+}
+.main-marcas .card-marcas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-marcas .card-marcas img {
+  display: block;
+  height: 45vh;
+  width: 80%;
+  object-fit: cover;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

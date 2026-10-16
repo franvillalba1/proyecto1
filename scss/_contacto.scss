@@ -1,0 +1,54 @@
+@use "variables" as *;
+
+.main-contacto {
+    @include grid-eleccion(1fr, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    aside{
+        height: 10vh;
+        width: 100%;
+        background-color: $color-publicidad;
+    }
+    .form-contacto{
+        @include flex-eleccion(column, space-around, center);
+        height: 55vh;
+        width: 90vh;
+        border: 1px solid rgb(231, 224, 224);
+        overflow: hidden;
+        gap: 5px;
+        background-color: $color-card;
+        margin: 20px;
+        label{
+            color:$color-texto-principal;
+        }
+        .titulo-secundario{
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .main-contacto{
+        @include grid-eleccion(10% 80% 10%, 1fr);
+
+        aside{
+            height: 100%;
+            width: 100%;
+        }
+        .form-contacto{
+            height: 65vh;
+            gap: 3px;
+        }
+    }
+}
+
+.footer-contacto{
+    @include grid-eleccion(10% 80% 10%, 1fr);
+    aside{
+            height: 100%;
+            width: 100%;
+            background-color: $color-publicidad;
+            display: block;
+        }
+}

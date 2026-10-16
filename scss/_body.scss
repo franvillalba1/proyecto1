@@ -1,0 +1,167 @@
+@use "variables" as *;
+body{
+    background-color: $color-principal;
+}
+.titulo-principal{
+    color: $color-titulo;
+    text-align: center;
+    margin: 20px; 
+}
+
+.main{
+    @include grid-eleccion(1fr, 3fr);
+    aside{
+        height: 10vh;
+        width: 100%;
+        background-color: $color-publicidad;
+    }    
+}
+.contenedor-producto-home{
+    @include grid-eleccion(1fr, 3fr);
+    justify-content: center;
+    align-items: center;
+    
+    .card-producto-home{
+        @include flex-eleccion(column, space-around, center);
+        height: 45vh;
+        width: 80vh;
+        border: 1px solid rgb(231, 224, 224);
+        overflow: hidden;
+        gap: 5px;
+        background-color: $color-card;
+        margin: 20px;
+        img{
+            display: block;
+            width: 80%;
+            height: 40%;
+            object-fit: cover;
+        }
+        img:hover{
+            transform: scale(1.25);
+        }
+        h6{
+            color:$color-titulo;
+        }
+        p{
+            color:$color-texto-principal;
+        }
+    }
+}
+.titulo-secundario{
+    color: $color-titulo;
+    text-align: center;
+    margin: 10px;
+}
+.contenedor-nosotros-home{
+    @include grid-eleccion(1fr, 3fr);
+    .card-nosotros-home{
+        @include flex-eleccion(column, center, center);
+        height: 45vh;
+        width: 80vh;
+        border: 1px solid rgb(231, 224, 224);
+        overflow: hidden;
+        gap: 5px;
+        background-color: $color-card;
+        margin: 20px;
+        img{
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        h4{
+            color: $color-titulo;
+        }
+        p{
+            color: $color-texto-principal;
+        }
+    }
+}
+.contenedor-reclamos-home{
+    @include grid-eleccion(1fr, 3fr);
+    .card-reclamos-home{
+        @include flex-eleccion(column, center, center);
+        height: 45vh;
+        width: 80vh;
+        border: 1px solid rgb(231, 224, 224);
+        overflow: hidden;
+        gap: 5px;
+        background-color: $color-card;
+        margin: 20px;
+        .form-contacto{
+            @include flex-eleccion(column, center, center);
+            gap: 10px;
+            label{
+                color: $color-texto-principal;
+            }
+        }
+        img{
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+footer{
+    aside{
+        display: none;
+    }
+    p{
+        color: $color-footer;
+        text-align: center;
+        font-size: small;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .main{
+        @include grid-eleccion(10% 80% 10%, 1fr);
+        aside{
+            height: 100%;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .contenedor-producto-home{
+            @include flex-eleccion(column, center, center);
+        }
+        .contenedor-nosotros-home {
+            @include flex-eleccion(column, center, center);
+        }
+        .contenedor-reclamos-home{
+            @include flex-eleccion(column, center, center);
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .main{
+        .contenedor-producto-home{
+        @include flex-eleccion(row, center, center);
+        margin: 15px;
+        flex-wrap: wrap;
+        .card-producto-home{
+            height: 45vh;
+            width: 37vh;
+        }
+    }
+    .contenedor-nosotros-home{
+        @include flex-eleccion(row, center, center);
+        margin: 15px;
+        flex-wrap: wrap;
+        .card-nosotros-home{
+            height: 45vh;
+            width: 37vh;
+        }
+    }
+    .contenedor-reclamos-home{
+        @include flex-eleccion(row, center, center);
+        margin: 15px;
+        flex-wrap: wrap;
+        .card-reclamos-home{
+            height: 45vh;
+            width: 37vh;
+        }
+    }
+    }
+}

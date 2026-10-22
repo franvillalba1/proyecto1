@@ -5,6 +5,9 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    .titulo-principal {
+        grid-column: 1 / -1;
+    }
     .aside-nosotros{
         height: 10vh;
         width: 100%;

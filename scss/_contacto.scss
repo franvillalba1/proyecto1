@@ -5,6 +5,9 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    .titulo-principal {
+        grid-column: 1 / -1;
+    }
     aside{
         height: 10vh;
         width: 100%;
@@ -13,12 +16,12 @@
     .form-contacto{
         @include flex-eleccion(column, space-around, center);
         height: 55vh;
-        width: 90vh;
+        width: 90%;
         border: 1px solid rgb(231, 224, 224);
         overflow: hidden;
         gap: 5px;
         background-color: $color-card;
-        margin: 20px;
+        margin: 10px;
         label{
             color:$color-texto-principal;
         }

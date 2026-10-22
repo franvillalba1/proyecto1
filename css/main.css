@@ -34,6 +34,11 @@ header .NavBar li a {
   font-size: small;
 }
 
+@media (min-width: 768px) {
+  header .NavBar li a {
+    font-size: medium;
+  }
+}
 body {
   background-color: rgb(31, 9, 50);
 }

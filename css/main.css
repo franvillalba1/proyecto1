@@ -98,6 +98,10 @@ body {
 .contenedor-producto-home .card-producto-home p {
   color: hsl(74, 75%, 47%);
 }
+.contenedor-producto-home .card-producto-home a .boton-main:hover {
+  transform: scale(1.3);
+  background-color: #012c0a !important;
+}
 
 .titulo-secundario {
   color: chartreuse;
@@ -137,6 +141,10 @@ body {
 .contenedor-nosotros-home .card-nosotros-home p {
   color: hsl(74, 75%, 47%);
 }
+.contenedor-nosotros-home .card-nosotros-home a .boton-main-nosotros:hover {
+  transform: scale(1.3);
+  background-color: #012c0a !important;
+}
 
 .contenedor-reclamos-home {
   display: grid;
@@ -173,6 +181,10 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.contenedor-reclamos-home .card-reclamos-home .boton-main-reclamo:hover {
+  transform: scale(1.3);
+  background-color: #012c0a !important;
 }
 
 footer {

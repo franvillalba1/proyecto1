@@ -60,7 +60,21 @@ body {
 .main aside {
   height: 10vh;
   width: 100%;
-  background-color: rgb(71, 249, 255);
+  text-align: center;
+  background: linear-gradient(180deg, rgb(37, 2, 36) 0%, rgb(165, 86, 99) 33%, rgb(33, 165, 62) 66%, rgb(16, 19, 215) 100%);
+  background-size: 400% 400%;
+  animation: pruebita 5s ease infinite;
+}
+@keyframes pruebita {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 .contenedor-producto-home {

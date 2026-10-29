@@ -1,8 +1,13 @@
-$color-principal: rgb(31, 9, 50);
+$color-principal: linear-gradient(
+    90deg,
+    rgba(45, 14, 66, 1) 0%,
+    rgb(80, 11, 11) 50%,
+    rgb(6, 69, 26) 100%
+);
 $color-texto-principal:hsl(74, 75%, 47%);
-$color-titulo:  chartreuse;
+$color-titulo:  rgb(162, 244, 79);
 $color-publicidad: rgb(71, 249, 255);
-$color-card: rgb(117, 71, 160);
+$color-card: rgb(152, 121, 181);
 $color-footer: rgb(161, 10, 40);
 $color-secundario: rgb(59, 16, 99);
 $color-hover: #012c0a;

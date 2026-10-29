@@ -12,7 +12,7 @@ header .NavBar {
 }
 
 header {
-  background-color: rgb(31, 9, 50);
+  background-color: linear-gradient(90deg, rgb(45, 14, 66) 0%, rgb(80, 11, 11) 50%, rgb(6, 69, 26) 100%);
   display: grid;
   grid-template-columns: 10% 90%;
   align-items: center;
@@ -40,11 +40,11 @@ header .NavBar li a {
   }
 }
 body {
-  background-color: rgb(31, 9, 50);
+  background: linear-gradient(90deg, rgb(45, 14, 66) 0%, rgb(80, 11, 11) 50%, rgb(6, 69, 26) 100%);
 }
 
 .titulo-principal {
-  color: chartreuse;
+  color: rgb(162, 244, 79);
   text-align: center;
   margin: 20px;
 }
@@ -80,7 +80,7 @@ body {
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
   gap: 5px;
-  background-color: rgb(117, 71, 160);
+  background-color: rgb(152, 121, 181);
   margin: 10px;
 }
 .contenedor-producto-home .card-producto-home img {
@@ -92,8 +92,8 @@ body {
 .contenedor-producto-home .card-producto-home img:hover {
   transform: scale(1.25);
 }
-.contenedor-producto-home .card-producto-home h6 {
-  color: chartreuse;
+.contenedor-producto-home .card-producto-home h3 {
+  color: rgb(162, 244, 79);
 }
 .contenedor-producto-home .card-producto-home p {
   color: hsl(74, 75%, 47%);
@@ -104,7 +104,7 @@ body {
 }
 
 .titulo-secundario {
-  color: chartreuse;
+  color: rgb(162, 244, 79);
   text-align: center;
   margin: 10px;
 }
@@ -126,7 +126,7 @@ body {
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
   gap: 5px;
-  background-color: rgb(117, 71, 160);
+  background-color: rgb(152, 121, 181);
   margin: 10px;
 }
 .contenedor-nosotros-home .card-nosotros-home img {
@@ -135,8 +135,8 @@ body {
   width: 100%;
   object-fit: cover;
 }
-.contenedor-nosotros-home .card-nosotros-home h4 {
-  color: chartreuse;
+.contenedor-nosotros-home .card-nosotros-home h3 {
+  color: rgb(162, 244, 79);
 }
 .contenedor-nosotros-home .card-nosotros-home p {
   color: hsl(74, 75%, 47%);
@@ -163,7 +163,7 @@ body {
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
   gap: 5px;
-  background-color: rgb(117, 71, 160);
+  background-color: rgb(152, 121, 181);
   margin: 10px;
 }
 .contenedor-reclamos-home .card-reclamos-home .form-contacto {
@@ -319,7 +319,7 @@ footer p {
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
   gap: 5px;
-  background-color: rgb(117, 71, 160);
+  background-color: rgb(152, 121, 181);
   margin: 10px;
 }
 .main-contacto .form-contacto label {
@@ -382,7 +382,7 @@ footer p {
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
   gap: 5px;
-  background-color: rgb(117, 71, 160);
+  background-color: rgb(152, 121, 181);
   margin: 10px;
 }
 .main-productos .card-productos img {
@@ -394,8 +394,8 @@ footer p {
 .main-productos .card-productos img:hover {
   transform: scale(1.25);
 }
-.main-productos .card-productos h5 {
-  color: chartreuse;
+.main-productos .card-productos h2 {
+  color: rgb(162, 244, 79);
 }
 .main-productos .card-productos p {
   color: hsl(74, 75%, 47%);
@@ -466,7 +466,7 @@ footer p {
   width: 90%;
   border: 1px solid black;
   overflow: hidden;
-  background-color: rgb(117, 71, 160);
+  background-color: rgb(152, 121, 181);
   color: hsl(74, 75%, 47%);
   font-size: smaller;
   margin: 5px 0px;

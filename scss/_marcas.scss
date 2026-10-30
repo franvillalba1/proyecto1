@@ -11,7 +11,9 @@
     .aside-marcas{
         height: 10vh;
         width: 100%;
-        background-color: $color-publicidad;
+        background: $gradiente-publi;
+        background-size: 400% 400%;
+        animation: pruebita 5s ease infinite;
     }
     .contenedor-marcas{
         margin: 5px

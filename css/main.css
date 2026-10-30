@@ -1,3 +1,14 @@
+@keyframes pruebita {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +40,7 @@ header .NavBar {
 }
 header .NavBar li a {
   text-decoration: none;
-  color: hsl(74, 75%, 47%);
+  color: hsl(120, 19%, 93%);
   font-style: inherit;
   font-size: small;
 }
@@ -65,17 +76,6 @@ body {
   background-size: 400% 400%;
   animation: pruebita 5s ease infinite;
 }
-@keyframes pruebita {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
 
 .contenedor-producto-home {
   display: grid;
@@ -102,6 +102,7 @@ body {
   width: 80%;
   height: 40%;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 .contenedor-producto-home .card-producto-home img:hover {
   transform: scale(1.25);
@@ -110,7 +111,10 @@ body {
   color: rgb(162, 244, 79);
 }
 .contenedor-producto-home .card-producto-home p {
-  color: hsl(74, 75%, 47%);
+  color: hsl(120, 19%, 93%);
+}
+.contenedor-producto-home .card-producto-home a .boton-main {
+  transition: transform 0.5s ease, background-color 0.5s ease;
 }
 .contenedor-producto-home .card-producto-home a .boton-main:hover {
   transform: scale(1.3);
@@ -153,7 +157,10 @@ body {
   color: rgb(162, 244, 79);
 }
 .contenedor-nosotros-home .card-nosotros-home p {
-  color: hsl(74, 75%, 47%);
+  color: hsl(120, 19%, 93%);
+}
+.contenedor-nosotros-home .card-nosotros-home a .boton-main-nosotros {
+  transition: transform 0.5s ease, background-color 0.5s ease;
 }
 .contenedor-nosotros-home .card-nosotros-home a .boton-main-nosotros:hover {
   transform: scale(1.3);
@@ -188,13 +195,16 @@ body {
   gap: 10px;
 }
 .contenedor-reclamos-home .card-reclamos-home .form-contacto label {
-  color: hsl(74, 75%, 47%);
+  color: hsl(120, 19%, 93%);
 }
 .contenedor-reclamos-home .card-reclamos-home img {
   display: block;
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.contenedor-reclamos-home .card-reclamos-home .boton-main-reclamo {
+  transition: transform 0.5s ease, background-color 0.5s ease;
 }
 .contenedor-reclamos-home .card-reclamos-home .boton-main-reclamo:hover {
   transform: scale(1.3);
@@ -321,7 +331,9 @@ footer p {
 .main-contacto aside {
   height: 10vh;
   width: 100%;
-  background-color: rgb(71, 249, 255);
+  background: linear-gradient(180deg, rgb(37, 2, 36) 0%, rgb(165, 86, 99) 33%, rgb(33, 165, 62) 66%, rgb(16, 19, 215) 100%);
+  background-size: 400% 400%;
+  animation: pruebita 5s ease infinite;
 }
 .main-contacto .form-contacto {
   display: flex;
@@ -337,7 +349,7 @@ footer p {
   margin: 10px;
 }
 .main-contacto .form-contacto label {
-  color: hsl(74, 75%, 47%);
+  color: hsl(120, 19%, 93%);
 }
 .main-contacto .form-contacto .titulo-secundario {
   margin: 0;
@@ -384,7 +396,9 @@ footer p {
 .main-productos .aside-productos {
   height: 10vh;
   width: 100%;
-  background-color: rgb(71, 249, 255);
+  background: linear-gradient(180deg, rgb(37, 2, 36) 0%, rgb(165, 86, 99) 33%, rgb(33, 165, 62) 66%, rgb(16, 19, 215) 100%);
+  background-size: 400% 400%;
+  animation: pruebita 5s ease infinite;
 }
 .main-productos .card-productos {
   display: flex;
@@ -404,6 +418,7 @@ footer p {
   width: 80%;
   height: 40%;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 .main-productos .card-productos img:hover {
   transform: scale(1.25);
@@ -412,7 +427,7 @@ footer p {
   color: rgb(162, 244, 79);
 }
 .main-productos .card-productos p {
-  color: hsl(74, 75%, 47%);
+  color: hsl(120, 19%, 93%);
 }
 
 @media (min-width: 768px) {
@@ -455,7 +470,9 @@ footer p {
 .main-nosotros .aside-nosotros {
   height: 10vh;
   width: 100%;
-  background-color: rgb(71, 249, 255);
+  background: linear-gradient(180deg, rgb(37, 2, 36) 0%, rgb(165, 86, 99) 33%, rgb(33, 165, 62) 66%, rgb(16, 19, 215) 100%);
+  background-size: 400% 400%;
+  animation: pruebita 5s ease infinite;
 }
 .main-nosotros .contenedor-nosotros {
   justify-items: center;
@@ -481,7 +498,7 @@ footer p {
   border: 1px solid black;
   overflow: hidden;
   background-color: rgb(152, 121, 181);
-  color: hsl(74, 75%, 47%);
+  color: hsl(120, 19%, 93%);
   font-size: smaller;
   margin: 5px 0px;
   gap: 5px;
@@ -540,7 +557,9 @@ footer p {
 .main-marcas .aside-marcas {
   height: 10vh;
   width: 100%;
-  background-color: rgb(71, 249, 255);
+  background: linear-gradient(180deg, rgb(37, 2, 36) 0%, rgb(165, 86, 99) 33%, rgb(33, 165, 62) 66%, rgb(16, 19, 215) 100%);
+  background-size: 400% 400%;
+  animation: pruebita 5s ease infinite;
 }
 .main-marcas .contenedor-marcas {
   margin: 5px;

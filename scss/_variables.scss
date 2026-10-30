@@ -4,7 +4,7 @@ $color-principal: linear-gradient(
     rgb(80, 11, 11) 50%,
     rgb(6, 69, 26) 100%
 );
-$color-texto-principal:hsl(74, 75%, 47%);
+$color-texto-principal:hsl(120, 19%, 93%);
 $color-titulo:  rgb(162, 244, 79);
 $color-publicidad: rgb(71, 249, 255);
 $color-card: rgb(152, 121, 181);
@@ -26,3 +26,21 @@ $color-hover: #012c0a;
     justify-content: $justify;
     align-items: $aling;
 }
+
+//keyframes
+
+@keyframes pruebita{
+        0%   { background-position: 50% 0%; }
+        50%  { background-position: 50% 100%; }
+        100% { background-position: 50% 0%; }
+    }
+
+//gradiente
+
+$gradiente-publi: linear-gradient(
+            180deg,
+            rgb(37, 2, 36) 0%,
+            rgb(165, 86, 99) 33%,
+            rgb(33, 165, 62) 66%,
+            rgb(16, 19, 215) 100%,
+        );

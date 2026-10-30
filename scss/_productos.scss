@@ -11,7 +11,9 @@
     .aside-productos{
         height: 10vh;
         width: 100%;
-        background-color: $color-publicidad;
+        background: $gradiente-publi;
+        background-size: 400% 400%;
+        animation: pruebita 5s ease infinite;
     }
     .card-productos{
          @include flex-eleccion(column, space-around, center);
@@ -27,6 +29,7 @@
             width: 80%;
             height: 40%;
             object-fit: cover;
+            transition: transform 0.5s ease;
         }
         img:hover{
             transform: scale(1.25);

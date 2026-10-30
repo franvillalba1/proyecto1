@@ -11,7 +11,9 @@
     aside{
         height: 10vh;
         width: 100%;
-        background-color: $color-publicidad;
+        background: $gradiente-publi;
+        background-size: 400% 400%;
+        animation: pruebita 5s ease infinite;
     }
     .form-contacto{
         @include flex-eleccion(column, space-around, center);

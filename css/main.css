@@ -67,6 +67,7 @@ body {
 }
 .main .titulo-principal {
   grid-column: 1/-1;
+  --animate-duration: 3s;
 }
 .main aside {
   height: 10vh;

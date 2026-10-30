@@ -12,6 +12,7 @@ body{
     @include grid-eleccion(1fr, 3fr);
     .titulo-principal {
         grid-column: 1 / -1;
+        --animate-duration: 3s;
     }
     aside{
         height: 10vh;

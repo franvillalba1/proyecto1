@@ -1,9 +1,9 @@
-@use "variables" as *;
-@use "reset";
-@use "header";
-@use "body";
-@use "contacto";
-@use "productos";
-@use "nosotros";
-@use "marcas";
+@use "utilities/variables" as *;
+@use "base/reset";
+@use "layouts/header";
+@use "layouts/body";
+@use "components/contacto";
+@use "components/productos";
+@use "components/nosotros";
+@use "components/marcas";
 

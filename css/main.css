@@ -23,7 +23,7 @@ header .NavBar {
 }
 
 header {
-  background-color: linear-gradient(90deg, rgb(45, 14, 66) 0%, rgb(80, 11, 11) 50%, rgb(6, 69, 26) 100%);
+  background: linear-gradient(90deg, rgb(45, 14, 66) 0%, rgb(80, 11, 11) 50%, rgb(6, 69, 26) 100%);
   display: grid;
   grid-template-columns: 10% 90%;
   align-items: center;
@@ -94,8 +94,7 @@ body {
   width: 80%;
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
-  gap: 5px;
-  background-color: rgb(152, 121, 181);
+  background-color: rgb(56, 5, 104);
   margin: 10px;
 }
 .contenedor-producto-home .card-producto-home img {
@@ -110,6 +109,7 @@ body {
 }
 .contenedor-producto-home .card-producto-home h3 {
   color: rgb(162, 244, 79);
+  text-align: center;
 }
 .contenedor-producto-home .card-producto-home p {
   color: hsl(120, 19%, 93%);
@@ -145,7 +145,7 @@ body {
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
   gap: 5px;
-  background-color: rgb(152, 121, 181);
+  background-color: rgb(56, 5, 104);
   margin: 10px;
 }
 .contenedor-nosotros-home .card-nosotros-home img {
@@ -185,7 +185,7 @@ body {
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
   gap: 5px;
-  background-color: rgb(152, 121, 181);
+  background-color: rgb(56, 5, 104);
   margin: 10px;
 }
 .contenedor-reclamos-home .card-reclamos-home .form-contacto {
@@ -346,7 +346,7 @@ footer p {
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
   gap: 5px;
-  background-color: rgb(152, 121, 181);
+  background-color: rgb(56, 5, 104);
   margin: 10px;
 }
 .main-contacto .form-contacto label {
@@ -411,13 +411,13 @@ footer p {
   border: 1px solid rgb(231, 224, 224);
   overflow: hidden;
   gap: 5px;
-  background-color: rgb(152, 121, 181);
+  background-color: rgb(56, 5, 104);
   margin: 10px;
 }
 .main-productos .card-productos img {
   display: block;
   width: 80%;
-  height: 40%;
+  height: 35%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -426,9 +426,12 @@ footer p {
 }
 .main-productos .card-productos h2 {
   color: rgb(162, 244, 79);
+  text-align: center;
+  font-size: larger;
 }
 .main-productos .card-productos p {
   color: hsl(120, 19%, 93%);
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -498,7 +501,7 @@ footer p {
   width: 90%;
   border: 1px solid black;
   overflow: hidden;
-  background-color: rgb(152, 121, 181);
+  background-color: rgb(56, 5, 104);
   color: hsl(120, 19%, 93%);
   font-size: smaller;
   margin: 5px 0px;

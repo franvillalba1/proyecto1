@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use "../utilities/variables" as *;
 
 .main-productos{
     @include grid-eleccion(1fr, 9fr);
@@ -27,7 +27,7 @@
         img{
             display: block;
             width: 80%;
-            height: 40%;
+            height: 35%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
@@ -36,9 +36,12 @@
         }
         h2{
             color:$color-titulo;
+            text-align: center;
+            font-size: larger;
         }
         p{
             color:$color-texto-principal;
+            text-align: center;
         }
     }
 }

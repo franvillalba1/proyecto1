@@ -23,7 +23,7 @@ header .NavBar {
 }
 
 header {
-  background: linear-gradient(90deg, rgb(45, 14, 66) 0%, rgb(80, 11, 11) 50%, rgb(6, 69, 26) 100%);
+  background: linear-gradient(90deg, rgb(7, 2, 39) 0%, rgb(10, 3, 98) 33%, rgb(63, 1, 66) 86%);
   display: grid;
   grid-template-columns: 10% 90%;
   align-items: center;
@@ -51,7 +51,7 @@ header .NavBar li a {
   }
 }
 body {
-  background: linear-gradient(90deg, rgb(45, 14, 66) 0%, rgb(80, 11, 11) 50%, rgb(6, 69, 26) 100%);
+  background: linear-gradient(90deg, rgb(7, 2, 39) 0%, rgb(10, 3, 98) 33%, rgb(63, 1, 66) 86%);
 }
 
 .titulo-principal {
@@ -454,6 +454,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+    justify-items: center;
     margin: 0px;
   }
   .main-productos .container-productos .card-productos {

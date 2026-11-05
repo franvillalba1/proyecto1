@@ -79,6 +79,7 @@
     .main-productos{
         .container-productos{
             @include grid-eleccion(repeat(3, 1fr), auto);
+            justify-items: center;
             margin: 0px;
             .card-productos{
             width: 80%;
